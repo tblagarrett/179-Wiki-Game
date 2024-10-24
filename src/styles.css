@@ -1,0 +1,82 @@
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set general page styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Center the main content and limit width */
+header, main, footer, section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header specific styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc; /* One border around the entire header */
+    border-radius: 10px;
+}
+
+/* Horizontal line under the title */
+header hr {
+    border: none;
+    border-top: 1px solid #bbb; /* Visible border */
+    width: 100%;
+    margin: 15px 0; /* Space around the line */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation menu */
+    width: 100%; /* Ensure it spans full width of the header */
+}
+
+nav ul li {
+    padding: 0 10px;
+    position: relative;
+}
+
+/* Add vertical border to the right of all items except the last */
+nav ul li + li {
+    border-left: 1px solid #ccc; /* Vertical line between nav items */
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    padding: 10px;
+    display: block;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+}
