@@ -1,6 +1,8 @@
 // This stores all click 
 //events that need to be tracked. 
 //When they are added, it adds them to local storage
+document.title = "Updated Page Title";
+
 const triggered = 'true';
 const untriggred = 'false';
 
@@ -29,3 +31,4 @@ class page{
 }
 
 
+console.log("hi!");
