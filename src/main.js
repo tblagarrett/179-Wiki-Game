@@ -9,10 +9,6 @@ function modPage(){
     document.title = wikiName;
     
     
-    const wikiHeader = document.getElementById("wikiHeader");
-    if (wikiHeader){
-        wikiHeader.innerHTML = `<a href="/index.html">${wikiName}</a>`
-    }
 
     // Select the <ul> element containing the suggested pages
     const suggestedPages = document.getElementById('suggestedPages');
