@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modPage();
 });
 function modPage(){
-    const wikiName = "My Awesome Wiki";
+    const wikiName = "The House Killer Rampage";
     document.title = wikiName;
     
     
