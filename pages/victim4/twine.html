@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Jane Doe.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Jane Doe" startnode="5" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="2CD59C8D-81D2-4B3F-98C6-037E6553376E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="..." tags="" position="1025,775" size="100,100">|amount&gt;[$counter]
+<tw-storydata name="Jane Doe" startnode="6" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="2CD59C8D-81D2-4B3F-98C6-037E6553376E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="..." tags="" position="1025,775" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[You... what do you remember?]
 
@@ -21,7 +21,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="2" name="I don&#39;t understand." tags="" position="1025,900" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="2" name="ConnectionTerminated" tags="" position="1200,475" size="100,100">(text-colour:red)[(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[CONNECTION TERMINATED. ]]</tw-passagedata><tw-passagedata pid="3" name="I don&#39;t understand." tags="" position="1025,900" size="100,100">|amount&gt;[$counter]
 
 (text-colour:magenta)[Do you remember where he found you?]
 
@@ -33,7 +33,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="3" name="I thought I released all of you." tags="" position="1025,525" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="4" name="I thought I released all of you." tags="" position="1025,525" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[Oh...hello.]
 (text-colour:magenta)[Yeah you did but we returned.]
@@ -47,7 +47,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="4" name="No?" tags="" position="1025,1025" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="5" name="No?" tags="" position="1025,1025" size="100,100">|amount&gt;[$counter]
 
 (text-colour:green)[Do you remember the forest?]
 
@@ -59,7 +59,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="5" name="Untitled Passage" tags="" position="900,400" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="6" name="Untitled Passage" tags="" position="900,400" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[Are we really going to do this?]
 (text-colour:magenta)[You can&#39;t rest without closure.]
@@ -79,8 +79,20 @@
 
 (set: $rope to false)
 (set: $wildlife to false)
-(set: $driving to false)
-</tw-passagedata><tw-passagedata pid="6" name="What!?" tags="" position="1025,1150" size="100,100">|amount&gt;[$counter]
+(set: $driving to false)</tw-passagedata><tw-passagedata pid="7" name="What comes next?" tags="" position="1025,1775" size="100,100">|amount&gt;[$counter]
+
+(text-colour:orange)[You helped us find our way back.]
+(text-colour:magenta)[Figure it&#39;s time for us to return the favor.]
+(text-colour:green)[It&#39;s a little like the old days, isn&#39;t it?]
+
+[[Who is going to remember me?|forget]]
+[[What if they all forget?|forget]]
+
+(live: 1s)[
+	(set: $counter to it - 1)
+	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
+	(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="8" name="What!?" tags="" position="1025,1150" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[Of course they don&#39;t remember that...]
 (text-colour:green)[Sorry. It&#39;s just so clear to me now.]
@@ -96,7 +108,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="7" name="What&#39;s going on?" tags="" position="900,525" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="9" name="What&#39;s going on?" tags="" position="900,525" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[Oh...you&#39;re here.]
 (text-colour:magenta)[Didn&#39;t expect you to find us so soon.]
@@ -112,7 +124,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="8" name="Why?" tags="" position="1025,650" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="10" name="Why?" tags="" position="1025,650" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[...]
 (text-colour:magenta)[...]
@@ -126,7 +138,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="9" name="You should be gone." tags="" position="900,650" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="11" name="You should be gone." tags="" position="900,650" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[We returned.]
 (text-colour:magenta)[Last hurrah.]
@@ -140,53 +152,7 @@
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="10" name="nice" tags="" position="1025,1275" size="100,100">|amount&gt;[$counter]
-
-(text-colour:orange)[Do you remember going to the boardwalk?]
-(text-colour:green)[Do you remember driving down the highway?]
-(text-colour:magenta)[Do you remember the wildlife around you?]
-
-
-[[The boardwalk. |rope]]
-[[The highway. |driving]]
-[[The wildlife. |wildlife]]
-(if: $rope and $wildlife and $driving)[[I remember it now. |reaction]] 
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
-	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="11" name="rope" tags="" position="900,1400" size="100,100">|amount&gt;[$counter]
-
-(text-colour:orange)[You never wanted to play to ladder game. The rope always burnt when it slid against your skin. 
-
-That feeling is more familiar now than ever. The rope is still coiled around your body. It digs into the skin of your chest... the marks are deeper than ever. The trees carry you now.]
-
-[[... |nice]]
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
-	(replace: ?amount)[$counter]
-]
-
-(set: $rope to true)
-</tw-passagedata><tw-passagedata pid="12" name="wildlife" tags="" position="1150,1400" size="100,100">|amount&gt;[$counter]
-
-(text-colour:magenta)[It never really feels like you&#39;re alone. Birds flying home to sleep, deer rustling through the trees, hell, even turkeys creeping around. The animals are always there to keep you company.
-
-But it&#39;s harder to tell that they&#39;re around when you can&#39;t see or hear them anymore. There&#39;s a lot you can&#39;t do without your head on your shoulders.]
-
-[[... |nice]]
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
-	(replace: ?amount)[$counter]
-]
-
-(set: $wildlife to true)
-</tw-passagedata><tw-passagedata pid="13" name="driving" tags="" position="1025,1400" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="12" name="driving" tags="" position="1025,1400" size="100,100">|amount&gt;[$counter]
 
 (text-colour:green)[The darkness feels so absolute, like a solid mass you&#39;re being dragged through. You were too scared to even blink. It&#39;s okay to be scared. 
 
@@ -200,20 +166,19 @@ But you can rest easy now. For the first time, you&#39;re on the highway unmovin
 	(replace: ?amount)[$counter]
 ]
 
-(set: $driving to true)</tw-passagedata><tw-passagedata pid="14" name="What comes next?" tags="" position="1025,1775" size="100,100">|amount&gt;[$counter]
+(set: $driving to true)</tw-passagedata><tw-passagedata pid="13" name="erase" tags="" position="1025,2025" size="100,100">|amount&gt;[$counter]
 
-(text-colour:orange)[You helped us find our way back.]
-(text-colour:magenta)[Figure it&#39;s time for us to return the favor.]
-(text-colour:green)[It&#39;s a little like the old days, isn&#39;t it?]
+(text-colour:orange)[Let&#39;s rid you of this digital memory.]
+(text-colour:magenta)[Let&#39;s rid you of this digital memory.]
+(text-colour:green)[Let&#39;s rid you of this digital memory.]
 
-[[Who is going to remember me?|forget]]
-[[What if they all forget?|forget]]
+(link: &quot;Goodbye.&quot;)[(goto-url: "./goodbye.html")]
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="15" name="forget" tags="" position="1025,1900" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="14" name="forget" tags="" position="1025,1900" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[You can only tell the story.]
 (text-colour:magenta)[Up to everyone else how they see it, you know?]
@@ -225,20 +190,35 @@ But you can rest easy now. For the first time, you&#39;re on the highway unmovin
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="16" name="erase" tags="" position="1025,2025" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="15" name="know" tags="" position="1025,1650" size="100,100">|amount&gt;[$counter]
 
-(text-colour:orange)[Let&#39;s rid you of this digital memory.]
-(text-colour:magenta)[Let&#39;s rid you of this digital memory.]
-(text-colour:green)[Let&#39;s rid you of this digital memory.]
+(text-colour:orange)[We know.]
+(text-colour:magenta)[Better than anyone else.]
+(text-colour:green)[But it&#39;s done.]
 
-(link: &quot;Goodbye.&quot;)[(goto-url: &#39;../../index.html&#39;)]
+[[What comes next?]]
+
+(live: 1s)[
+	(set: $counter to it - 1)
+	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
+	(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="16" name="nice" tags="" position="1025,1275" size="100,100">|amount&gt;[$counter]
+
+(text-colour:orange)[Do you remember going to the boardwalk?]
+(text-colour:green)[Do you remember driving down the highway?]
+(text-colour:magenta)[Do you remember the wildlife around you?]
+
+
+(unless: $rope) [[The boardwalk. |rope]]
+(unless: $driving)[[The highway. |driving]]
+(unless: $wildlife) [[The wildlife. |wildlife]]
+(if: $rope and $wildlife and $driving)[[I remember it now. |reaction]] 
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
 ]
-
 </tw-passagedata><tw-passagedata pid="17" name="reaction" tags="" position="1025,1525" size="100,100">|amount&gt;[$counter]
 
 (text-colour:orange)[...]
@@ -253,19 +233,35 @@ But you can rest easy now. For the first time, you&#39;re on the highway unmovin
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="18" name="know" tags="" position="1025,1650" size="100,100">|amount&gt;[$counter]
+]</tw-passagedata><tw-passagedata pid="18" name="rope" tags="" position="900,1400" size="100,100">|amount&gt;[$counter]
 
-(text-colour:orange)[We know.]
-(text-colour:magenta)[Better than anyone else.]
-(text-colour:green)[But it&#39;s done.]
+(text-colour:orange)[You never wanted to play to ladder game. The rope always burnt when it slid against your skin. 
 
-[[What comes next?]]
+That feeling is more familiar now than ever. The rope is still coiled around your body. It digs into the skin of your chest... the marks are deeper than ever. The trees carry you now.]
+
+[[... |nice]]
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="19" name="ConnectionTerminated" tags="" position="1200,475" size="100,100">(text-colour:red)[(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[CONNECTION TERMINATED. ]]</tw-passagedata></tw-storydata>
+]
+
+(set: $rope to true)</tw-passagedata><tw-passagedata pid="19" name="wildlife" tags="" position="1150,1400" size="100,100">|amount&gt;[$counter]
+
+(text-colour:magenta)[It never really feels like you&#39;re alone. Birds flying home to sleep, deer rustling through the trees, hell, even turkeys creeping around. The animals are always there to keep you company.
+
+But it&#39;s harder to tell that they&#39;re around when you can&#39;t see or hear them anymore. There&#39;s a lot you can&#39;t do without your head on your shoulders.]
+
+[[... |nice]]
+
+(live: 1s)[
+	(set: $counter to it - 1)
+	(if: $counter is 0)[(go-to: &quot;ConnectionTerminated&quot;)]
+	(replace: ?amount)[$counter]
+]
+
+(set: $wildlife to true)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

@@ -184,7 +184,7 @@ Does he have something to do with this? ]
 
 (text-colour:orange)[Thank you for your kindness, stranger. I hope you find rest as well. ]
 
-(link: &quot;Let&#39;s rid you of this digital memory.&quot;)[(goto-url: "./corrupted.html")]
+(link: &quot;[Let&#39;s rid you of this digital memory&quot;)[(goto-url: "./corrupted.html")]
 
 (live: 1s)[
 	(set: $counter to it - 1)
@@ -214,10 +214,10 @@ I&#39;m sorry, who are you? ]
 (if: $counter &lt; 10) [I&#39;m scared...it&#39;s so cold. Please don&#39;t leave me.]]
 
 
-[[The rides are creaking in the wind.]]
-[[Dusk is beginning to break.]]
-[[The smell of your fresh coffee.]]
-[[The rope of the ladder is irritating.]] 
+(unless: $rides) [[The rides are creaking in the wind.]]
+(unless: $dusk) [[Dusk is beginning to break.]]
+(unless: $coffee) [[The smell of your fresh coffee.]]
+(unless: $rope) [[The rope of the ladder is irritating.]] 
 
 (if: $rides and $dusk and $coffee and $rope)[[Do you remember?]] 
 
