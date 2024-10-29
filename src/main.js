@@ -28,7 +28,8 @@ function modPage(){
 
 // Change this to change the requirements to access the murderer info page
     if (localStorage.getItem('v1') == 'complete'&& localStorage.getItem('v2') == 'complete' && localStorage.getItem('v3') == 'complete'){
-        console.log("gee")
+
+        
         addLastPage();
     }
     
