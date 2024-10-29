@@ -19,8 +19,8 @@ function modPage(){
         const extraPage = document.createElement('li'); // Create a new <li> element
         const link = document.createElement('a'); // Create a new <a> element
         
-        link.href = "pages/killer/info"; // Set the href attribute
-        link.textContent = "Killer"; // Set the text of the link
+        link.href = "pages/victim4/info"; // Set the href attribute
+        link.textContent = "Person Doe"; // Set the text of the link
         
         extraPage.appendChild(link); // Append the <a> to the <li>
         suggestedPages.appendChild(extraPage); // Append the <li> to the <ul>
