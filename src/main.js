@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modPage();
 });
 function modPage(){
-    const wikiName = "My Awesome Wiki";
+    const wikiName = "The House Killer Rampage";
     document.title = wikiName;
     
     
@@ -35,7 +35,7 @@ function modPage(){
 
     function clearLocalStorage() {
         localStorage.clear(); // Clear all items from local storage
-        window.location.href = '/index.html';
+        window.location.href = './index.html';
     }
     
     // Function to create a clear local storage button
